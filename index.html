@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="style.css" media="screen" charset="utf-8">
   </head>
   <body>
-    <div class="header">
+    <header class="header">
       <img class="header__image" src="./eisenhower-matrix.jpg">
       <a 
         class="more-info__link" 
@@ -14,11 +14,12 @@
       >
         Want more details?
       </a>
-    </div>
-    <div class="todo-app">
-      <div id="add-task">
-        <label class="section-title add-task__label" for="new-task">Add Item</label>
+    </header>
+    <main class="todo-app">
+      <section class="add-task">
+        <h2 class="section-title">Add Item</h2>
         <div class="add-task-form">
+          <label for="new-task" class="task__label_hidden">New task</label>
           <input 
             id="new-task"
             class="task-input task-title add-task__input"
@@ -26,8 +27,8 @@
           >
           <button class="btn">Add</button>
         </div>
-      </div>
-      <h3 class="section-title">Todo</h3>
+      </section>
+      <h2 class="section-title">Todo</h2>
       <ul id="todo-list" class="task-list">
         <li class="list-item">
           <input type="checkbox" class="task__checkbox">
@@ -39,7 +40,7 @@
           </button>
         </li>
         <li class="list-item edit-mode">
-          <input type="checkbox" class="task-checkbox">
+          <input type="checkbox" class="task__checkbox">
           <label class="task-title task__label task__label_hidden">Go Shopping</label>
           <input type="text" 
             value="Go Shopping"
@@ -51,7 +52,7 @@
           </button>
         </li>
       </ul>
-      <h3 class="section-title">Completed</h3>
+      <h2 class="section-title">Completed</h2>
       <ul id="done-tasks" class="task-list">
         <li class="list-item">
           <input type="checkbox" class="task-checkbox" checked>
@@ -63,7 +64,7 @@
           </button>
         </li>
       </ul>
-    </div>
+    </main>
     <script src="app.js"></script>
   </body>
 </html>
