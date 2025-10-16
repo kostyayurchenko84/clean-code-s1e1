@@ -89,7 +89,6 @@ body {
 .add-task__input {
   width: 318px;
 }
-
 /* Task list */
 .list-item {
   display: flex;
