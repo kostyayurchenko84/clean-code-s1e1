@@ -128,15 +128,12 @@ body {
 }
 
 /* Edit Task */
-.task__input_hidden {
+.task__input_hidden, 
+.task__label_hidden {
   display: none;
 }
 
 .task__input_visible {
   display: inline-block;
   width: 224px;
-}
-
-.task__label_hidden {
-  display: none;
 }
