@@ -10,16 +10,17 @@ body {
   display: block;
   text-align: right;
 }
-.header img {
+.header__image {
   width: 100%;
 }
-.header .more-info__link {
+.more-info__link {
   font-family: fantasy, cursive;
 }
 
 @media (max-width:768px) {
-  .header { text-align: center;
-}
+  .header { 
+    text-align: center;
+  }
 }
 .todo-app {
   display: block;
@@ -32,13 +33,13 @@ body {
 .task-title {
   width: 56%;
   display: inline-block;
-  flex-grow: 1
+  flex-grow: 1;
 }
 .add-task-form {
   display: flex;
 }
 .task-list {
-  margin:0;
+  margin: 0;
   padding: 0px;
   list-style:none;
 }
@@ -123,13 +124,13 @@ body {
 
 /* Completed */
 .task__label_completed {
-  text-decoration: line-through
+  text-decoration: line-through;
   color: #888;
 }
 
 /* Edit Task */
 .task__input_hidden {
-  display:none
+  display: none;
 }
 
 .task__input_visible {
@@ -138,5 +139,5 @@ body {
 }
 
 .task__label_hidden {
-  display:none;
+  display: none;
 }
