@@ -93,6 +93,8 @@ var deleteTask=function(){
 var taskCompleted=function(){
   console.log("Complete Task...");
   var listItem=this.parentNode;
+  var label = listItem.querySelector(".task__label"); 
+  label.classList.add("task__label_completed");
   completedTasksHolder.appendChild(listItem);
   bindTaskEvents(listItem, taskIncomplete);  
 }
@@ -104,15 +106,14 @@ var taskIncomplete=function(){
   bindTaskEvents(listItem,taskCompleted);
 }
 
-addButton.onclick=addTask;
 addButton.addEventListener("click",addTask);
 
 
 var bindTaskEvents=function(taskListItem,checkBoxEventHandler){
   console.log("bind list item events");
-  var checkBox=taskListItem.querySelector("task__checkbox");
-  var editButton=taskListItem.querySelector("edit-task");
-  var deleteButton=taskListItem.querySelector("edit-task");
+  var checkBox=taskListItem.querySelector(".task__checkbox");
+  var editButton=taskListItem.querySelector(".edit-task");
+  var deleteButton=taskListItem.querySelector(".delete-task");
   
   editButton.onclick=editTask;
   deleteButton.onclick=deleteTask;
